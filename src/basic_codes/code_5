@@ -1,0 +1,23 @@
+public class var {
+    {
+        int num = 10;
+        void modifyVarie(int value)
+        {
+            num = value;
+        }
+        void printVariable()
+        {
+            System.out.println("Value of num: " + num);
+        }
+        public static void main(String[] args) {
+             var obj1 = new var();
+            var obj2 = new var();
+            obj1.modifyVarie(20);
+            obj1.printVarie();
+            obj2.printVariable();
+        }
+    }
+
+    private void printVariable() {
+    }
+}
