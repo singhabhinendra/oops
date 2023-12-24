@@ -1,0 +1,27 @@
+public class Calculator {//class calculator
+    static int result;//static variable
+    public void add(int num1,int num2) {   //member function add which performs the operation addition.
+        result = num1 + num2;//stored in static variable result..
+    }
+    public static void subtract(int num1, int num2){//subtract member function
+        result =num1-num2;//stored in result
+    }
+    public int  getresult(){//it is method with argument and return .
+        return result;//stored in result..
+    }
+    public static void main(String args[]){//Main method
+        Calculator calculator =new Calculator();//create reference variable .
+        int num1=10;//initialize
+        int num2=5;//initialize
+        calculator.add(num1,num2);//call by reference variable subtract
+        System.out.println(calculator.getresult());//output
+        Calculator.subtract(num1,num2);//call by reference variable subtract
+        System.out.println(calculator.result());//output
+
+
+    }
+
+    private int result() {
+        return result;//call method result ..
+    }
+}
